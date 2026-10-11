@@ -2,20 +2,21 @@
 
 ## About the Project
 
-The Password Strength Checker is a simple Python project that checks the strength of a password. It has a graphical user interface (GUI) where users can enter their passwords and see how strong they are.
+The Password Strength Checker is a Python project developed using Tkinter. It checks the strength of a password based on its length and character types.
 
-The project helps users understand the importance of creating strong passwords to protect their accounts.
+I developed this project to learn Python GUI development and understand the basics of password security. The application has a simple dark-themed interface that shows password strength and provides helpful tips for creating stronger passwords.
 
 ## Features
 
-* Checks password strength.
-* Shows password strength in real time.
-* Displays a visual strength meter.
-* Checks uppercase and lowercase letters.
-* Checks numbers and special characters.
+* User-friendly graphical interface.
+* Checks password strength in real time.
+* Displays a password strength score out of 5.
+* Shows a visual strength meter.
+* Checks password length, uppercase letters, lowercase letters, numbers, and symbols.
 * Allows users to show or hide their passwords.
-* Provides a button to clear the password.
-* Uses a simple, dark-themed interface.
+* Displays password requirements with status indicators.
+* Provides helpful tips for creating stronger passwords.
+* Checks passwords locally without sending them to an external server.
 
 ## Technologies Used
 
@@ -26,23 +27,32 @@ The project helps users understand the importance of creating strong passwords t
 
 ## How It Works
 
-The application checks the password length and the types of characters used. Based on these conditions, it calculates a score and displays the password strength as Weak, Medium, Strong, or Very Strong.
+The application checks whether the password meets five basic requirements:
 
-It also shows which password requirements are satisfied.
+1. Contains at least 12 characters.
+2. Contains an uppercase letter.
+3. Contains a lowercase letter.
+4. Contains a number.
+5. Contains a symbol.
+
+Each satisfied requirement adds one point to the total score.
+
+Based on the score, the application displays the password strength as Weak, Medium, or Strong. The strength meter and requirement indicators update as the user types.
 
 ## How to Run the Project
 
 1. Install Python on your computer.
-2. Open the project folder in Visual Studio Code.
-3. Open the terminal.
-4. Run the following command:
+2. Download or clone this project.
+3. Open the project folder in Visual Studio Code.
+4. Open the terminal.
+5. Run the following command:
 
 ```bash
 python password_checker.py
 ```
 
-5. The application window will open.
-6. Enter a password and check its strength.
+6. The application window will open.
+7. Enter a password and check its strength.
 
 ## Project Structure
 
@@ -55,15 +65,24 @@ Password-Strength-Checker/
 
 ## What I Learned
 
-Through this project, I learned how to use Python functions, conditional statements, and string operations. I also learned how to create a graphical user interface using Tkinter and update the password strength while the user types.
+Through this project, I learned how to use Python classes, functions, conditional statements, and string operations. I also learned how to create a graphical user interface using Tkinter, update interface elements dynamically, and use events to respond to user input.
+
+This project also helped me understand the importance of password length, character variety, and using unique passwords.
 
 ## Future Improvements
 
 * Add a strong password generator.
-* Improve password-strength checking.
-* Add more password security suggestions.
-* Improve the user interface.
+* Improve the password-strength assessment.
+* Add checks for commonly used passwords.
+* Improve the interface with additional customization options.
+* Add more password security recommendations.
 
 ## Conclusion
 
-This project helped me understand the basics of Python programming and password security. It is a beginner-friendly project that demonstrates how Python can be used to develop a simple cybersecurity application.
+This project helped me improve my Python programming skills and understand basic password security concepts. It also gave me practical experience in developing a graphical application using Tkinter.
+
+The project is intended for educational purposes and provides a simple way to understand password-strength checking.
+
+## Author
+
+Developed as a Python and cybersecurity learning project.
